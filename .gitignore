@@ -1,0 +1,25 @@
+# System Files #
+####################
+.DS_store
+
+
+# Django #
+####################
+__pycache__
+*.log
+
+
+# Environments #
+####################
+.venv
+ase_env/*
+
+# VS Code #
+####################
+.vscode/*
+
+
+# Data # 
+###################
+*.csv
+*.numbers

@@ -1,0 +1,23 @@
+{% extends "ase_site/base.html" %}
+{% load bootstrap4 %}
+
+{% block page_header %}
+  <h1>ASE Database</h1>
+    <p>This is a centralized listing of academic student employment positions at the University of California, Berkeley.
+      The database is currently in beta and only includes ASE opportunities from three schools: the School of Information, 
+      the Department of Economics, and the Department of Cognitive Science. 
+    </p>
+{% endblock page_header %}
+
+{% block content %}
+  <form action="{% url 'ase_site:results' %}" method='GET'>
+    {% csrf_token %}
+    <!-- {{form.as_p}} -->
+    {% bootstrap_form form %}
+    {% buttons %}
+      <button name="submit" class="btn btn-primary">Submit</button>
+    {% endbuttons %}
+    </form>
+
+{% endblock content %}
+

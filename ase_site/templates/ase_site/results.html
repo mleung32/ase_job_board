@@ -1,0 +1,22 @@
+{% extends "ase_site/base.html" %}
+
+{% block content %}
+<h3>{{count}} Search Results</h3>
+
+<ul>
+  {% for result in queryset %}
+  <li>
+    <a href="{% url 'ase_site:posting' posting_id=result.posting_id %}">
+      {{result}}
+    </a>
+  </li>
+
+  {% empty %}
+  <li>No results found. Please search again.</li>
+
+  {% endfor %}
+</ul>
+
+{% endblock content %}
+
+

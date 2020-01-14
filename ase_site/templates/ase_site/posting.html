@@ -1,0 +1,23 @@
+{% extends "ase_site/base.html" %}
+
+{% block content %}
+
+<h3>{{posting}}</h3>
+
+<p>Number of Positions Available: {{posting.num_positions}}</p>
+<p>Fee Remission: {{posting.fee_remission}}</p>
+<p>Hours Per Week: {{posting.hours_per_wk}}</p>
+<p>Percent Time: {{posting.percent_time}}</p>
+
+<p>Instructor: {{posting.instructor}}</p>
+<p>Class Day(s): {{posting.class_days}}</p>
+<p>Class Time: {{posting.class_start_time}} - {{posting.class_end_time}}</p>
+
+<p>{{posting.class_desc}}</p>
+
+<p>Application Due Date: {{posting.app_due_date}}</p>
+<p>Apply Here:
+  <a href={{posting.app_url}}>{{posting.app_url}}</a>
+</p>
+
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends "ase_site/base.html" %}
+{% load bootstrap4 %}
+
+{% block page_header %}
+  <h2>Submit a New ASE Job Posting</h2>
+{% endblock page_header %}
+
+{% block content%}
+  <form action="{% url 'ase_site:new_post' %}" method="POST">
+    {% csrf_token %}
+    <!-- {{form.as_p}} -->
+    {% bootstrap_form form %}
+    {% buttons %}
+      <button name="submit" class="btn btn-primary">Submit</button>
+    {% endbuttons %}
+  </form>
+
+{% endblock content %}
