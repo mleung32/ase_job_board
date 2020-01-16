@@ -16,7 +16,6 @@ class Posting(models.Model):
     #positions
     GSI = "GSI"
     HEAD_GSI = "Head GSI"
-    GSR = "GSR"
     TUTOR = "Tutor"
     READER = "Reader"
     COURSE_ASST = "Course Asst"
@@ -37,7 +36,6 @@ class Posting(models.Model):
     position_choices = (
         (GSI, "GSI"),
         (HEAD_GSI, "Head GSI"), 
-        (GSR, "GSR"), 
         (TUTOR, "Tutor"), 
         (READER, "Reader"),
         (COURSE_ASST, "Course Assistant"),

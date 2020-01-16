@@ -1,5 +1,5 @@
-### ASE Database 
-A web app that centralizes academic student employment (ASE) opportunities at the University of California, Berkeley. Users can add new opportunities to the database and search for positions by keyword or by applying filters on semester, position-type, percent-time, and school/department. 
+### ASE Job Board
+A centralized listing of academic student employment (ASE) opportunities at the University of California, Berkeley. Users can add new opportunities to the database and search for positions by keyword or by applying filters on semester, position-type, percent-time, and school/department. 
 
 ### Built With 
 * Python 3.7
